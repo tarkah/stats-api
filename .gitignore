@@ -1,0 +1,6 @@
+/target
+**/*.rs.bk
+run.sh
+config.yml
+
+Cargo.lock
