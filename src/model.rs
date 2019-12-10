@@ -172,6 +172,65 @@ pub struct GameContentEditorialItemArticle {
     pub subhead: String,
     pub seo_title: String,
     pub seo_description: String,
+    #[serde(deserialize_with = "fail_as_none")]
+    pub media: Option<GameContentArticleMedia>,
+}
+
+#[serde(rename_all = "camelCase")]
+#[derive(Debug, Deserialize, Clone)]
+pub struct GameContentArticleMedia {
+    pub r#type: String,
+    pub image: GameContentArticleMediaImage,
+}
+
+#[serde(rename_all = "camelCase")]
+#[derive(Debug, Deserialize, Clone)]
+pub struct GameContentArticleMediaImage {
+    pub cuts: GameContentArticleMediaImageCut,
+}
+
+#[serde(rename_all = "camelCase")]
+#[derive(Debug, Deserialize, Clone)]
+pub struct GameContentArticleMediaImageCut {
+    #[serde(rename(deserialize = "2208x1242"))]
+    pub cut_2208_1242: GameContentArticleMediaImageCutDetail,
+    #[serde(rename(deserialize = "2048x1152"))]
+    pub cut_2048_1152: GameContentArticleMediaImageCutDetail,
+    #[serde(rename(deserialize = "1704x960"))]
+    pub cut_1704_960: GameContentArticleMediaImageCutDetail,
+    #[serde(rename(deserialize = "1536x864"))]
+    pub cut_1536_864: GameContentArticleMediaImageCutDetail,
+    #[serde(rename(deserialize = "1284x722"))]
+    pub cut_1284_722: GameContentArticleMediaImageCutDetail,
+    #[serde(rename(deserialize = "1136x640"))]
+    pub cut_1136_640: GameContentArticleMediaImageCutDetail,
+    #[serde(rename(deserialize = "1024x576"))]
+    pub cut_1024_576: GameContentArticleMediaImageCutDetail,
+    #[serde(rename(deserialize = "960x540"))]
+    pub cut_960_540: GameContentArticleMediaImageCutDetail,
+    #[serde(rename(deserialize = "768x432"))]
+    pub cut_768_432: GameContentArticleMediaImageCutDetail,
+    #[serde(rename(deserialize = "640x360"))]
+    pub cut_640_360: GameContentArticleMediaImageCutDetail,
+    #[serde(rename(deserialize = "568x320"))]
+    pub cut_568_320: GameContentArticleMediaImageCutDetail,
+    #[serde(rename(deserialize = "372x210"))]
+    pub cut_372_210: GameContentArticleMediaImageCutDetail,
+    #[serde(rename(deserialize = "320x180"))]
+    pub cut_320_180: GameContentArticleMediaImageCutDetail,
+    #[serde(rename(deserialize = "248x140"))]
+    pub cut_248_140: GameContentArticleMediaImageCutDetail,
+    #[serde(rename(deserialize = "124x70"))]
+    pub cut_124_70: GameContentArticleMediaImageCutDetail,
+}
+
+#[serde(rename_all = "camelCase")]
+#[derive(Debug, Deserialize, Clone)]
+pub struct GameContentArticleMediaImageCutDetail {
+    pub aspect_ratio: String,
+    pub width: u32,
+    pub height: u32,
+    pub src: String,
 }
 
 #[serde(rename_all = "camelCase")]
