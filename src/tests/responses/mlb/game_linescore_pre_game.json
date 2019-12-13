@@ -1,0 +1,22 @@
+{
+    "copyright": "Copyright 2019 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt",
+    "innings": [],
+    "teams": {
+        "home": {
+            "team": {
+                "id": 5163,
+                "name": "Carolina Hurricanes",
+                "link": "/api/v1/teams/5163"
+            }
+        },
+        "away": {
+            "team": {
+                "id": 5167,
+                "name": "Dallas Stars",
+                "link": "/api/v1/teams/5167"
+            }
+        }
+    },
+    "defense": {},
+    "offense": {}
+}

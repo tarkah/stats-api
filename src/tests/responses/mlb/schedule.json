@@ -1,0 +1,676 @@
+{
+    "copyright": "Copyright 2019 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt",
+    "totalItems": 9,
+    "totalEvents": 0,
+    "totalGames": 9,
+    "totalGamesInProgress": 0,
+    "dates": [
+        {
+            "date": "2018-06-14",
+            "totalItems": 9,
+            "totalEvents": 0,
+            "totalGames": 9,
+            "totalGamesInProgress": 0,
+            "games": [
+                {
+                    "gamePk": 530433,
+                    "link": "/api/v1/game/530433/feed/live",
+                    "gameType": "R",
+                    "season": "2018",
+                    "gameDate": "2018-06-14T16:10:00Z",
+                    "status": {
+                        "abstractGameState": "Final",
+                        "codedGameState": "F",
+                        "detailedState": "Final",
+                        "statusCode": "F",
+                        "abstractGameCode": "F"
+                    },
+                    "teams": {
+                        "away": {
+                            "leagueRecord": {
+                                "wins": 34,
+                                "losses": 35,
+                                "pct": ".493"
+                            },
+                            "score": 6,
+                            "team": {
+                                "id": 137,
+                                "name": "San Francisco Giants",
+                                "link": "/api/v1/teams/137"
+                            },
+                            "isWinner": true,
+                            "splitSquad": false,
+                            "seriesNumber": 22
+                        },
+                        "home": {
+                            "leagueRecord": {
+                                "wins": 26,
+                                "losses": 43,
+                                "pct": ".377"
+                            },
+                            "score": 3,
+                            "team": {
+                                "id": 146,
+                                "name": "Miami Marlins",
+                                "link": "/api/v1/teams/146"
+                            },
+                            "isWinner": false,
+                            "splitSquad": false,
+                            "seriesNumber": 22
+                        }
+                    },
+                    "venue": {
+                        "id": 4169,
+                        "name": "Marlins Park",
+                        "link": "/api/v1/venues/4169"
+                    },
+                    "content": {
+                        "link": "/api/v1/game/530433/content"
+                    },
+                    "isTie": false,
+                    "gameNumber": 1,
+                    "publicFacing": true,
+                    "doubleHeader": "N",
+                    "gamedayType": "P",
+                    "tiebreaker": "N",
+                    "calendarEventID": "14-530433-2018-06-14",
+                    "seasonDisplay": "2018",
+                    "dayNight": "day",
+                    "scheduledInnings": 9,
+                    "inningBreakLength": 125,
+                    "gamesInSeries": 4,
+                    "seriesGameNumber": 4,
+                    "seriesDescription": "Regular Season",
+                    "recordSource": "S",
+                    "ifNecessary": "N",
+                    "ifNecessaryDescription": "Normal Game"
+                },
+                {
+                    "gamePk": 530428,
+                    "link": "/api/v1/game/530428/feed/live",
+                    "gameType": "R",
+                    "season": "2018",
+                    "gameDate": "2018-06-14T17:05:00Z",
+                    "status": {
+                        "abstractGameState": "Final",
+                        "codedGameState": "F",
+                        "detailedState": "Final",
+                        "statusCode": "F",
+                        "abstractGameCode": "F"
+                    },
+                    "teams": {
+                        "away": {
+                            "leagueRecord": {
+                                "wins": 33,
+                                "losses": 35,
+                                "pct": ".485"
+                            },
+                            "score": 3,
+                            "team": {
+                                "id": 115,
+                                "name": "Colorado Rockies",
+                                "link": "/api/v1/teams/115"
+                            },
+                            "isWinner": false,
+                            "splitSquad": false,
+                            "seriesNumber": 22
+                        },
+                        "home": {
+                            "leagueRecord": {
+                                "wins": 35,
+                                "losses": 31,
+                                "pct": ".530"
+                            },
+                            "score": 9,
+                            "team": {
+                                "id": 143,
+                                "name": "Philadelphia Phillies",
+                                "link": "/api/v1/teams/143"
+                            },
+                            "isWinner": true,
+                            "splitSquad": false,
+                            "seriesNumber": 22
+                        }
+                    },
+                    "venue": {
+                        "id": 2681,
+                        "name": "Citizens Bank Park",
+                        "link": "/api/v1/venues/2681"
+                    },
+                    "content": {
+                        "link": "/api/v1/game/530428/content"
+                    },
+                    "isTie": false,
+                    "gameNumber": 1,
+                    "publicFacing": true,
+                    "doubleHeader": "N",
+                    "gamedayType": "P",
+                    "tiebreaker": "N",
+                    "calendarEventID": "14-530428-2018-06-14",
+                    "seasonDisplay": "2018",
+                    "dayNight": "day",
+                    "scheduledInnings": 9,
+                    "inningBreakLength": 125,
+                    "gamesInSeries": 3,
+                    "seriesGameNumber": 3,
+                    "seriesDescription": "Regular Season",
+                    "recordSource": "S",
+                    "ifNecessary": "N",
+                    "ifNecessaryDescription": "Normal Game"
+                },
+                {
+                    "gamePk": 530430,
+                    "link": "/api/v1/game/530430/feed/live",
+                    "gameType": "R",
+                    "season": "2018",
+                    "gameDate": "2018-06-14T17:10:00Z",
+                    "status": {
+                        "abstractGameState": "Final",
+                        "codedGameState": "F",
+                        "detailedState": "Final",
+                        "statusCode": "F",
+                        "abstractGameCode": "F"
+                    },
+                    "teams": {
+                        "away": {
+                            "leagueRecord": {
+                                "wins": 29,
+                                "losses": 36,
+                                "pct": ".446"
+                            },
+                            "score": 1,
+                            "team": {
+                                "id": 142,
+                                "name": "Minnesota Twins",
+                                "link": "/api/v1/teams/142"
+                            },
+                            "isWinner": false,
+                            "splitSquad": false,
+                            "seriesNumber": 23
+                        },
+                        "home": {
+                            "leagueRecord": {
+                                "wins": 33,
+                                "losses": 37,
+                                "pct": ".471"
+                            },
+                            "score": 3,
+                            "team": {
+                                "id": 116,
+                                "name": "Detroit Tigers",
+                                "link": "/api/v1/teams/116"
+                            },
+                            "isWinner": true,
+                            "splitSquad": false,
+                            "seriesNumber": 23
+                        }
+                    },
+                    "venue": {
+                        "id": 2394,
+                        "name": "Comerica Park",
+                        "link": "/api/v1/venues/2394"
+                    },
+                    "content": {
+                        "link": "/api/v1/game/530430/content"
+                    },
+                    "isTie": false,
+                    "gameNumber": 1,
+                    "publicFacing": true,
+                    "doubleHeader": "N",
+                    "gamedayType": "P",
+                    "tiebreaker": "N",
+                    "calendarEventID": "14-530430-2018-06-14",
+                    "seasonDisplay": "2018",
+                    "dayNight": "day",
+                    "scheduledInnings": 9,
+                    "inningBreakLength": 125,
+                    "gamesInSeries": 3,
+                    "seriesGameNumber": 3,
+                    "seriesDescription": "Regular Season",
+                    "recordSource": "S",
+                    "ifNecessary": "N",
+                    "ifNecessaryDescription": "Normal Game"
+                },
+                {
+                    "gamePk": 530427,
+                    "link": "/api/v1/game/530427/feed/live",
+                    "gameType": "R",
+                    "season": "2018",
+                    "gameDate": "2018-06-14T18:10:00Z",
+                    "status": {
+                        "abstractGameState": "Final",
+                        "codedGameState": "F",
+                        "detailedState": "Final",
+                        "statusCode": "F",
+                        "abstractGameCode": "F"
+                    },
+                    "teams": {
+                        "away": {
+                            "leagueRecord": {
+                                "wins": 36,
+                                "losses": 31,
+                                "pct": ".537"
+                            },
+                            "score": 5,
+                            "team": {
+                                "id": 114,
+                                "name": "Cleveland Indians",
+                                "link": "/api/v1/teams/114"
+                            },
+                            "isWinner": true,
+                            "splitSquad": false,
+                            "seriesNumber": 23
+                        },
+                        "home": {
+                            "leagueRecord": {
+                                "wins": 24,
+                                "losses": 43,
+                                "pct": ".358"
+                            },
+                            "score": 2,
+                            "team": {
+                                "id": 145,
+                                "name": "Chicago White Sox",
+                                "link": "/api/v1/teams/145"
+                            },
+                            "isWinner": false,
+                            "splitSquad": false,
+                            "seriesNumber": 22
+                        }
+                    },
+                    "venue": {
+                        "id": 4,
+                        "name": "Guaranteed Rate Field",
+                        "link": "/api/v1/venues/4"
+                    },
+                    "content": {
+                        "link": "/api/v1/game/530427/content"
+                    },
+                    "isTie": false,
+                    "gameNumber": 1,
+                    "publicFacing": true,
+                    "doubleHeader": "N",
+                    "gamedayType": "P",
+                    "tiebreaker": "N",
+                    "calendarEventID": "14-530427-2018-06-14",
+                    "seasonDisplay": "2018",
+                    "dayNight": "day",
+                    "scheduledInnings": 9,
+                    "inningBreakLength": 125,
+                    "gamesInSeries": 4,
+                    "seriesGameNumber": 4,
+                    "seriesDescription": "Regular Season",
+                    "recordSource": "S",
+                    "ifNecessary": "N",
+                    "ifNecessaryDescription": "Normal Game"
+                },
+                {
+                    "gamePk": 530429,
+                    "link": "/api/v1/game/530429/feed/live",
+                    "gameType": "R",
+                    "season": "2018",
+                    "gameDate": "2018-06-14T19:35:00Z",
+                    "status": {
+                        "abstractGameState": "Final",
+                        "codedGameState": "F",
+                        "detailedState": "Final",
+                        "statusCode": "F",
+                        "abstractGameCode": "F"
+                    },
+                    "teams": {
+                        "away": {
+                            "leagueRecord": {
+                                "wins": 45,
+                                "losses": 25,
+                                "pct": ".643"
+                            },
+                            "score": 7,
+                            "team": {
+                                "id": 117,
+                                "name": "Houston Astros",
+                                "link": "/api/v1/teams/117"
+                            },
+                            "isWinner": true,
+                            "splitSquad": false,
+                            "seriesNumber": 22
+                        },
+                        "home": {
+                            "leagueRecord": {
+                                "wins": 34,
+                                "losses": 35,
+                                "pct": ".493"
+                            },
+                            "score": 3,
+                            "team": {
+                                "id": 133,
+                                "name": "Oakland Athletics",
+                                "link": "/api/v1/teams/133"
+                            },
+                            "isWinner": false,
+                            "splitSquad": false,
+                            "seriesNumber": 22
+                        }
+                    },
+                    "venue": {
+                        "id": 10,
+                        "name": "Oakland Coliseum",
+                        "link": "/api/v1/venues/10"
+                    },
+                    "content": {
+                        "link": "/api/v1/game/530429/content"
+                    },
+                    "isTie": false,
+                    "gameNumber": 1,
+                    "publicFacing": true,
+                    "doubleHeader": "N",
+                    "gamedayType": "P",
+                    "tiebreaker": "N",
+                    "calendarEventID": "14-530429-2018-06-14",
+                    "seasonDisplay": "2018",
+                    "dayNight": "day",
+                    "scheduledInnings": 9,
+                    "inningBreakLength": 125,
+                    "gamesInSeries": 3,
+                    "seriesGameNumber": 3,
+                    "seriesDescription": "Regular Season",
+                    "recordSource": "S",
+                    "ifNecessary": "N",
+                    "ifNecessaryDescription": "Normal Game"
+                },
+                {
+                    "gamePk": 530434,
+                    "link": "/api/v1/game/530434/feed/live",
+                    "gameType": "R",
+                    "season": "2018",
+                    "gameDate": "2018-06-14T23:05:00Z",
+                    "status": {
+                        "abstractGameState": "Final",
+                        "codedGameState": "F",
+                        "detailedState": "Final",
+                        "statusCode": "F",
+                        "abstractGameCode": "F"
+                    },
+                    "teams": {
+                        "away": {
+                            "leagueRecord": {
+                                "wins": 32,
+                                "losses": 36,
+                                "pct": ".471"
+                            },
+                            "score": 3,
+                            "team": {
+                                "id": 139,
+                                "name": "Tampa Bay Rays",
+                                "link": "/api/v1/teams/139"
+                            },
+                            "isWinner": false,
+                            "splitSquad": false,
+                            "seriesNumber": 23
+                        },
+                        "home": {
+                            "leagueRecord": {
+                                "wins": 44,
+                                "losses": 21,
+                                "pct": ".677"
+                            },
+                            "score": 4,
+                            "team": {
+                                "id": 147,
+                                "name": "New York Yankees",
+                                "link": "/api/v1/teams/147"
+                            },
+                            "isWinner": true,
+                            "splitSquad": false,
+                            "seriesNumber": 24
+                        }
+                    },
+                    "venue": {
+                        "id": 3313,
+                        "name": "Yankee Stadium",
+                        "link": "/api/v1/venues/3313"
+                    },
+                    "content": {
+                        "link": "/api/v1/game/530434/content"
+                    },
+                    "isTie": false,
+                    "gameNumber": 1,
+                    "publicFacing": true,
+                    "doubleHeader": "N",
+                    "gamedayType": "P",
+                    "tiebreaker": "N",
+                    "calendarEventID": "14-530434-2018-06-14",
+                    "seasonDisplay": "2018",
+                    "dayNight": "night",
+                    "scheduledInnings": 9,
+                    "inningBreakLength": 125,
+                    "gamesInSeries": 4,
+                    "seriesGameNumber": 1,
+                    "seriesDescription": "Regular Season",
+                    "recordSource": "S",
+                    "ifNecessary": "N",
+                    "ifNecessaryDescription": "Normal Game"
+                },
+                {
+                    "gamePk": 530432,
+                    "link": "/api/v1/game/530432/feed/live",
+                    "gameType": "R",
+                    "season": "2018",
+                    "gameDate": "2018-06-14T23:35:00Z",
+                    "status": {
+                        "abstractGameState": "Final",
+                        "codedGameState": "F",
+                        "detailedState": "Final",
+                        "statusCode": "F",
+                        "abstractGameCode": "F"
+                    },
+                    "teams": {
+                        "away": {
+                            "leagueRecord": {
+                                "wins": 33,
+                                "losses": 38,
+                                "pct": ".465"
+                            },
+                            "score": 2,
+                            "team": {
+                                "id": 135,
+                                "name": "San Diego Padres",
+                                "link": "/api/v1/teams/135"
+                            },
+                            "isWinner": false,
+                            "splitSquad": false,
+                            "seriesNumber": 23
+                        },
+                        "home": {
+                            "leagueRecord": {
+                                "wins": 40,
+                                "losses": 28,
+                                "pct": ".588"
+                            },
+                            "score": 4,
+                            "team": {
+                                "id": 144,
+                                "name": "Atlanta Braves",
+                                "link": "/api/v1/teams/144"
+                            },
+                            "isWinner": true,
+                            "splitSquad": false,
+                            "seriesNumber": 23
+                        }
+                    },
+                    "venue": {
+                        "id": 4705,
+                        "name": "SunTrust Park",
+                        "link": "/api/v1/venues/4705"
+                    },
+                    "content": {
+                        "link": "/api/v1/game/530432/content"
+                    },
+                    "isTie": false,
+                    "gameNumber": 1,
+                    "publicFacing": true,
+                    "doubleHeader": "N",
+                    "gamedayType": "P",
+                    "tiebreaker": "N",
+                    "calendarEventID": "14-530432-2018-06-14",
+                    "seasonDisplay": "2018",
+                    "dayNight": "night",
+                    "scheduledInnings": 9,
+                    "inningBreakLength": 125,
+                    "gamesInSeries": 4,
+                    "seriesGameNumber": 1,
+                    "seriesDescription": "Regular Season",
+                    "recordSource": "S",
+                    "ifNecessary": "N",
+                    "ifNecessaryDescription": "Normal Game"
+                },
+                {
+                    "gamePk": 530431,
+                    "link": "/api/v1/game/530431/feed/live",
+                    "gameType": "R",
+                    "season": "2018",
+                    "gameDate": "2018-06-15T01:40:00Z",
+                    "status": {
+                        "abstractGameState": "Final",
+                        "codedGameState": "F",
+                        "detailedState": "Final",
+                        "statusCode": "F",
+                        "abstractGameCode": "F"
+                    },
+                    "teams": {
+                        "away": {
+                            "leagueRecord": {
+                                "wins": 28,
+                                "losses": 37,
+                                "pct": ".431"
+                            },
+                            "score": 3,
+                            "team": {
+                                "id": 121,
+                                "name": "New York Mets",
+                                "link": "/api/v1/teams/121"
+                            },
+                            "isWinner": false,
+                            "splitSquad": false,
+                            "seriesNumber": 23
+                        },
+                        "home": {
+                            "leagueRecord": {
+                                "wins": 38,
+                                "losses": 30,
+                                "pct": ".559"
+                            },
+                            "score": 6,
+                            "team": {
+                                "id": 109,
+                                "name": "Arizona Diamondbacks",
+                                "link": "/api/v1/teams/109"
+                            },
+                            "isWinner": true,
+                            "splitSquad": false,
+                            "seriesNumber": 23
+                        }
+                    },
+                    "venue": {
+                        "id": 15,
+                        "name": "Chase Field",
+                        "link": "/api/v1/venues/15"
+                    },
+                    "content": {
+                        "link": "/api/v1/game/530431/content"
+                    },
+                    "isTie": false,
+                    "gameNumber": 1,
+                    "publicFacing": true,
+                    "doubleHeader": "N",
+                    "gamedayType": "P",
+                    "tiebreaker": "N",
+                    "calendarEventID": "14-530431-2018-06-14",
+                    "seasonDisplay": "2018",
+                    "dayNight": "night",
+                    "scheduledInnings": 9,
+                    "inningBreakLength": 125,
+                    "gamesInSeries": 4,
+                    "seriesGameNumber": 1,
+                    "seriesDescription": "Regular Season",
+                    "recordSource": "S",
+                    "ifNecessary": "N",
+                    "ifNecessaryDescription": "Normal Game"
+                },
+                {
+                    "gamePk": 530426,
+                    "link": "/api/v1/game/530426/feed/live",
+                    "gameType": "R",
+                    "season": "2018",
+                    "gameDate": "2018-06-15T02:10:00Z",
+                    "status": {
+                        "abstractGameState": "Final",
+                        "codedGameState": "F",
+                        "detailedState": "Final",
+                        "statusCode": "F",
+                        "abstractGameCode": "F"
+                    },
+                    "teams": {
+                        "away": {
+                            "leagueRecord": {
+                                "wins": 48,
+                                "losses": 22,
+                                "pct": ".686"
+                            },
+                            "score": 2,
+                            "team": {
+                                "id": 111,
+                                "name": "Boston Red Sox",
+                                "link": "/api/v1/teams/111"
+                            },
+                            "isWinner": true,
+                            "splitSquad": false,
+                            "seriesNumber": 23
+                        },
+                        "home": {
+                            "leagueRecord": {
+                                "wins": 44,
+                                "losses": 25,
+                                "pct": ".638"
+                            },
+                            "score": 1,
+                            "team": {
+                                "id": 136,
+                                "name": "Seattle Mariners",
+                                "link": "/api/v1/teams/136"
+                            },
+                            "isWinner": false,
+                            "splitSquad": false,
+                            "seriesNumber": 24
+                        }
+                    },
+                    "venue": {
+                        "id": 680,
+                        "name": "Safeco Field",
+                        "link": "/api/v1/venues/680"
+                    },
+                    "content": {
+                        "link": "/api/v1/game/530426/content"
+                    },
+                    "isTie": false,
+                    "gameNumber": 1,
+                    "publicFacing": true,
+                    "doubleHeader": "N",
+                    "gamedayType": "P",
+                    "tiebreaker": "N",
+                    "calendarEventID": "14-530426-2018-06-14",
+                    "seasonDisplay": "2018",
+                    "dayNight": "night",
+                    "scheduledInnings": 9,
+                    "inningBreakLength": 125,
+                    "gamesInSeries": 4,
+                    "seriesGameNumber": 1,
+                    "seriesDescription": "Regular Season",
+                    "recordSource": "S",
+                    "ifNecessary": "N",
+                    "ifNecessaryDescription": "Normal Game"
+                }
+            ],
+            "events": []
+        }
+    ]
+}

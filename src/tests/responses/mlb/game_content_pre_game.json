@@ -1,0 +1,41 @@
+{
+    "copyright": "Copyright 2019 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt",
+    "link": "/api/v1/game/605643/content",
+    "editorial": {
+        "preview": {},
+        "recap": {},
+        "wrap": {}
+    },
+    "media": {
+        "epgAlternate": [
+            {
+                "items": [],
+                "title": "Extended Highlights"
+            },
+            {
+                "items": [],
+                "title": "Daily Recap"
+            }
+        ],
+        "featuredMedia": {},
+        "freeGame": false,
+        "enhancedGame": false
+    },
+    "highlights": {
+        "highlights": {
+            "items": []
+        },
+        "live": {
+            "items": []
+        },
+        "scoreboardPreview": {
+            "items": []
+        }
+    },
+    "summary": {
+        "hasPreviewArticle": false,
+        "hasRecapArticle": false,
+        "hasWrapArticle": false
+    },
+    "gameNotes": {}
+}

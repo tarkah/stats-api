@@ -1,0 +1,121 @@
+{
+    "copyright": "NHL and the NHL Shield are registered trademarks of the National Hockey League. NHL and NHL team marks are the property of the NHL and its teams. © NHL 2019. All Rights Reserved.",
+    "link": "/api/v1/game/2019020487/content",
+    "editorial": {
+        "preview": {
+            "title": "Preview",
+            "topicList": "",
+            "items": []
+        },
+        "articles": {
+            "title": "Articles",
+            "topicList": "",
+            "items": []
+        },
+        "recap": {
+            "title": "Recap",
+            "topicList": "",
+            "items": []
+        }
+    },
+    "media": {
+        "epg": [
+            {
+                "title": "NHLTV",
+                "platform": "web",
+                "items": [
+                    {
+                        "guid": "f94a7310-5e82-4155-bbec-a7a45e67b295",
+                        "mediaState": "MEDIA_OFF",
+                        "mediaPlaybackId": "70344803",
+                        "mediaFeedType": "HOME",
+                        "callLetters": "",
+                        "eventId": "221-2003790",
+                        "language": "eng",
+                        "freeGame": false,
+                        "feedName": "",
+                        "gamePlus": false
+                    },
+                    {
+                        "guid": "fd6e3b4d-75a4-4c16-8e8d-0b39a8bdcc83",
+                        "mediaState": "MEDIA_OFF",
+                        "mediaPlaybackId": "70344903",
+                        "mediaFeedType": "AWAY",
+                        "callLetters": "",
+                        "eventId": "221-2003790",
+                        "language": "eng",
+                        "freeGame": false,
+                        "feedName": "",
+                        "gamePlus": false
+                    },
+                    {
+                        "guid": "fbd1c781-66a1-4fa8-89b8-a50bbe584440",
+                        "mediaState": "MEDIA_OFF",
+                        "mediaPlaybackId": "70345403",
+                        "mediaFeedType": "COMPOSITE",
+                        "callLetters": "",
+                        "eventId": "221-2003790",
+                        "language": "eng",
+                        "freeGame": false,
+                        "feedName": "Multi-Cam 1",
+                        "gamePlus": false
+                    }
+                ]
+            },
+            {
+                "title": "Audio",
+                "items": [
+                    {
+                        "mediaState": "MEDIA_OFF",
+                        "mediaPlaybackId": "70345003",
+                        "mediaFeedType": "HOME",
+                        "callLetters": "",
+                        "eventId": "221-2003790",
+                        "language": "eng",
+                        "freeGame": false,
+                        "feedName": "",
+                        "gamePlus": false
+                    },
+                    {
+                        "mediaState": "MEDIA_OFF",
+                        "mediaPlaybackId": "70345103",
+                        "mediaFeedType": "AWAY",
+                        "callLetters": "",
+                        "eventId": "221-2003790",
+                        "language": "eng",
+                        "freeGame": false,
+                        "feedName": "",
+                        "gamePlus": false
+                    }
+                ]
+            },
+            {
+                "title": "Extended Highlights",
+                "topicList": "311476106",
+                "items": []
+            },
+            {
+                "title": "Recap",
+                "topicList": "311476106",
+                "items": []
+            },
+            {
+                "title": "Power Play",
+                "items": []
+            }
+        ],
+        "milestones": {}
+    },
+    "highlights": {
+        "scoreboard": {
+            "title": "Highlights",
+            "topicList": "311476106",
+            "items": []
+        },
+        "gameCenter": {
+            "title": "Highlights",
+            "topicList": "311476106",
+            "items": []
+        }
+    }
+}

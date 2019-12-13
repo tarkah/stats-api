@@ -1,0 +1,250 @@
+{
+    "copyright": "Copyright 2019 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt",
+    "currentInning": 9,
+    "currentInningOrdinal": "9th",
+    "inningState": "Top",
+    "inningHalf": "Top",
+    "isTopInning": true,
+    "scheduledInnings": 9,
+    "innings": [
+        {
+            "num": 1,
+            "ordinalNum": "1st",
+            "home": {
+                "runs": 1,
+                "hits": 1,
+                "errors": 0,
+                "leftOnBase": 0
+            },
+            "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0,
+                "leftOnBase": 0
+            }
+        },
+        {
+            "num": 2,
+            "ordinalNum": "2nd",
+            "home": {
+                "runs": 1,
+                "hits": 1,
+                "errors": 0,
+                "leftOnBase": 0
+            },
+            "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0,
+                "leftOnBase": 0
+            }
+        },
+        {
+            "num": 3,
+            "ordinalNum": "3rd",
+            "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0,
+                "leftOnBase": 0
+            },
+            "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0,
+                "leftOnBase": 0
+            }
+        },
+        {
+            "num": 4,
+            "ordinalNum": "4th",
+            "home": {
+                "runs": 0,
+                "hits": 1,
+                "errors": 0,
+                "leftOnBase": 1
+            },
+            "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0,
+                "leftOnBase": 0
+            }
+        },
+        {
+            "num": 5,
+            "ordinalNum": "5th",
+            "home": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0,
+                "leftOnBase": 0
+            },
+            "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0,
+                "leftOnBase": 0
+            }
+        },
+        {
+            "num": 6,
+            "ordinalNum": "6th",
+            "home": {
+                "runs": 1,
+                "hits": 2,
+                "errors": 0,
+                "leftOnBase": 2
+            },
+            "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0,
+                "leftOnBase": 0
+            }
+        },
+        {
+            "num": 7,
+            "ordinalNum": "7th",
+            "home": {
+                "runs": 4,
+                "hits": 5,
+                "errors": 0,
+                "leftOnBase": 2
+            },
+            "away": {
+                "runs": 2,
+                "hits": 2,
+                "errors": 0,
+                "leftOnBase": 1
+            }
+        },
+        {
+            "num": 8,
+            "ordinalNum": "8th",
+            "home": {
+                "runs": 2,
+                "hits": 3,
+                "errors": 0,
+                "leftOnBase": 1
+            },
+            "away": {
+                "runs": 1,
+                "hits": 1,
+                "errors": 0,
+                "leftOnBase": 0
+            }
+        },
+        {
+            "num": 9,
+            "ordinalNum": "9th",
+            "home": {
+                "hits": 0,
+                "errors": 0,
+                "leftOnBase": 0
+            },
+            "away": {
+                "runs": 0,
+                "hits": 0,
+                "errors": 0,
+                "leftOnBase": 0
+            }
+        }
+    ],
+    "teams": {
+        "home": {
+            "runs": 9,
+            "hits": 13,
+            "errors": 0,
+            "leftOnBase": 6
+        },
+        "away": {
+            "runs": 3,
+            "hits": 3,
+            "errors": 0,
+            "leftOnBase": 1
+        }
+    },
+    "defense": {
+        "pitcher": {
+            "id": 605388,
+            "fullName": "Adam Morgan",
+            "link": "/api/v1/people/605388"
+        },
+        "catcher": {
+            "id": 595284,
+            "fullName": "Andrew Knapp",
+            "link": "/api/v1/people/595284"
+        },
+        "first": {
+            "id": 467793,
+            "fullName": "Carlos Santana",
+            "link": "/api/v1/people/467793"
+        },
+        "second": {
+            "id": 514917,
+            "fullName": "Cesar Hernandez",
+            "link": "/api/v1/people/514917"
+        },
+        "third": {
+            "id": 641487,
+            "fullName": "J.P. Crawford",
+            "link": "/api/v1/people/641487"
+        },
+        "shortstop": {
+            "id": 664068,
+            "fullName": "Scott Kingery",
+            "link": "/api/v1/people/664068"
+        },
+        "left": {
+            "id": 656555,
+            "fullName": "Rhys Hoskins",
+            "link": "/api/v1/people/656555"
+        },
+        "center": {
+            "id": 546318,
+            "fullName": "Odubel Herrera",
+            "link": "/api/v1/people/546318"
+        },
+        "right": {
+            "id": 608384,
+            "fullName": "Nick Williams",
+            "link": "/api/v1/people/608384"
+        },
+        "team": {
+            "id": 143,
+            "name": "Philadelphia Phillies",
+            "link": "/api/v1/teams/143"
+        }
+    },
+    "offense": {
+        "batter": {
+            "id": 596115,
+            "fullName": "Trevor Story",
+            "link": "/api/v1/people/596115"
+        },
+        "onDeck": {
+            "id": 467827,
+            "fullName": "Gerardo Parra",
+            "link": "/api/v1/people/467827"
+        },
+        "inHole": {
+            "id": 435622,
+            "fullName": "Ian Desmond",
+            "link": "/api/v1/people/435622"
+        },
+        "pitcher": {
+            "id": 572044,
+            "fullName": "Brooks Pounders",
+            "link": "/api/v1/people/572044"
+        },
+        "team": {
+            "id": 115,
+            "name": "Colorado Rockies",
+            "link": "/api/v1/teams/115"
+        }
+    },
+    "balls": 0,
+    "strikes": 0,
+    "outs": 3
+}

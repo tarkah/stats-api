@@ -1,5 +1,5 @@
 #[cfg(feature = "mlb")]
-pub mod mlb;
+mod mlb;
 
 #[cfg(feature = "nhl")]
-pub mod nhl;
+mod nhl;

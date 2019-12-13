@@ -1,0 +1,48 @@
+{
+    "copyright": "NHL and the NHL Shield are registered trademarks of the National Hockey League. NHL and NHL team marks are the property of the NHL and its teams. © NHL 2019. All Rights Reserved.",
+    "currentPeriod": 0,
+    "periods": [],
+    "shootoutInfo": {
+        "away": {
+            "scores": 0,
+            "attempts": 0
+        },
+        "home": {
+            "scores": 0,
+            "attempts": 0
+        }
+    },
+    "teams": {
+        "home": {
+            "team": {
+                "id": 7,
+                "name": "Buffalo Sabres",
+                "link": "/api/v1/teams/7"
+            },
+            "goals": 0,
+            "shotsOnGoal": 0,
+            "goaliePulled": false,
+            "numSkaters": 0,
+            "powerPlay": false
+        },
+        "away": {
+            "team": {
+                "id": 18,
+                "name": "Nashville Predators",
+                "link": "/api/v1/teams/18"
+            },
+            "goals": 0,
+            "shotsOnGoal": 0,
+            "goaliePulled": false,
+            "numSkaters": 0,
+            "powerPlay": false
+        }
+    },
+    "powerPlayStrength": "Even",
+    "hasShootout": false,
+    "intermissionInfo": {
+        "intermissionTimeRemaining": 0,
+        "intermissionTimeElapsed": 0,
+        "inIntermission": false
+    }
+}

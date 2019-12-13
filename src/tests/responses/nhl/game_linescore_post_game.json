@@ -1,0 +1,107 @@
+{
+    "copyright": "NHL and the NHL Shield are registered trademarks of the National Hockey League. NHL and NHL team marks are the property of the NHL and its teams. © NHL 2019. All Rights Reserved.",
+    "currentPeriod": 3,
+    "currentPeriodOrdinal": "3rd",
+    "currentPeriodTimeRemaining": "Final",
+    "periods": [
+        {
+            "periodType": "REGULAR",
+            "startTime": "2019-11-30T00:06:51Z",
+            "endTime": "2019-11-30T00:42:00Z",
+            "num": 1,
+            "ordinalNum": "1st",
+            "home": {
+                "goals": 1,
+                "shotsOnGoal": 13,
+                "rinkSide": "left"
+            },
+            "away": {
+                "goals": 1,
+                "shotsOnGoal": 3,
+                "rinkSide": "right"
+            }
+        },
+        {
+            "periodType": "REGULAR",
+            "startTime": "2019-11-30T01:00:29Z",
+            "endTime": "2019-11-30T01:41:49Z",
+            "num": 2,
+            "ordinalNum": "2nd",
+            "home": {
+                "goals": 3,
+                "shotsOnGoal": 11,
+                "rinkSide": "right"
+            },
+            "away": {
+                "goals": 0,
+                "shotsOnGoal": 16,
+                "rinkSide": "left"
+            }
+        },
+        {
+            "periodType": "REGULAR",
+            "startTime": "2019-11-30T02:00:17Z",
+            "endTime": "2019-11-30T02:37:40Z",
+            "num": 3,
+            "ordinalNum": "3rd",
+            "home": {
+                "goals": 1,
+                "shotsOnGoal": 6,
+                "rinkSide": "left"
+            },
+            "away": {
+                "goals": 1,
+                "shotsOnGoal": 12,
+                "rinkSide": "right"
+            }
+        }
+    ],
+    "shootoutInfo": {
+        "away": {
+            "scores": 0,
+            "attempts": 0
+        },
+        "home": {
+            "scores": 0,
+            "attempts": 0
+        }
+    },
+    "teams": {
+        "home": {
+            "team": {
+                "id": 29,
+                "name": "Columbus Blue Jackets",
+                "link": "/api/v1/teams/29"
+            },
+            "goals": 5,
+            "shotsOnGoal": 30,
+            "goaliePulled": false,
+            "numSkaters": 5,
+            "powerPlay": false
+        },
+        "away": {
+            "team": {
+                "id": 5,
+                "name": "Pittsburgh Penguins",
+                "link": "/api/v1/teams/5"
+            },
+            "goals": 2,
+            "shotsOnGoal": 31,
+            "goaliePulled": false,
+            "numSkaters": 5,
+            "powerPlay": false
+        }
+    },
+    "powerPlayStrength": "Even",
+    "hasShootout": false,
+    "intermissionInfo": {
+        "intermissionTimeRemaining": 0,
+        "intermissionTimeElapsed": 0,
+        "inIntermission": false
+    },
+    "powerPlayInfo": {
+        "situationTimeRemaining": 0,
+        "situationTimeElapsed": 59,
+        "inSituation": false
+    }
+}
