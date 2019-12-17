@@ -3,13 +3,13 @@ use failure::{bail, Error};
 use serde::{Deserialize, Serialize};
 
 #[serde(rename_all = "camelCase")]
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct TeamsResponse {
     pub teams: Vec<Team>,
 }
 
 #[serde(rename_all = "camelCase")]
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct Team {
     pub id: u32,
     pub name: String,
@@ -60,20 +60,20 @@ impl ResponseType {
 }
 
 #[serde(rename_all = "camelCase")]
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct ScheduleResponse {
     pub dates: Vec<Schedule>,
 }
 
 #[serde(rename_all = "camelCase")]
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct Schedule {
     pub date: NaiveDate,
     pub games: Vec<ScheduleGame>,
 }
 
 #[serde(rename_all = "camelCase")]
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct ScheduleGame {
     pub game_pk: u64,
     pub link: String,
@@ -85,14 +85,14 @@ pub struct ScheduleGame {
 }
 
 #[serde(rename_all = "camelCase")]
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct ScheduleGameTeams {
     pub away: ScheduleGameTeam,
     pub home: ScheduleGameTeam,
 }
 
 #[serde(rename_all = "camelCase")]
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct ScheduleGameTeam {
     pub score: u8,
     #[serde(rename(deserialize = "team"))]
@@ -100,7 +100,7 @@ pub struct ScheduleGameTeam {
 }
 
 #[serde(rename_all = "camelCase")]
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct ScheduleGameTeamDetail {
     pub id: u32,
     pub name: String,
@@ -108,27 +108,27 @@ pub struct ScheduleGameTeamDetail {
 }
 
 #[serde(rename_all = "camelCase")]
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct GameContentResponse {
     pub editorial: GameContentEditorial,
     pub media: GameContentMedia,
 }
 
 #[serde(rename_all = "camelCase")]
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct GameContentMedia {
     pub epg: Option<Vec<GameContentEpg>>,
 }
 
 #[serde(rename_all = "camelCase")]
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct GameContentEpg {
     pub title: String,
     pub items: Vec<GameContentEpgItem>,
 }
 
 #[serde(rename_all = "camelCase")]
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct GameContentEpgItem {
     pub media_feed_type: Option<String>,
     pub call_letters: Option<String>,
@@ -137,14 +137,14 @@ pub struct GameContentEpgItem {
 }
 
 #[serde(rename_all = "camelCase")]
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct GameContentEditorial {
     #[serde(deserialize_with = "fail_as_none")]
     pub preview: Option<GameContentEditorialItem>,
 }
 
 #[serde(rename_all = "camelCase")]
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct GameContentEditorialItem {
     pub title: String,
     pub items: Option<Vec<GameContentEditorialItemArticle>>,
@@ -220,21 +220,21 @@ pub struct GameContentArticleMediaImageCutDetail {
 }
 
 #[serde(rename_all = "camelCase")]
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct GameLinescoreResponse {
     #[serde(deserialize_with = "fail_as_none")]
     pub teams: Option<GameLinescoreTeam>,
 }
 
 #[serde(rename_all = "camelCase")]
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct GameLinescoreTeams {
     pub home: GameLinescoreTeam,
     pub away: GameLinescoreTeam,
 }
 
 #[serde(rename_all = "camelCase")]
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct GameLinescoreTeam {
     pub runs: u32,
     pub hits: u32,
