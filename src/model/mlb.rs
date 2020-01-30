@@ -16,7 +16,7 @@ pub struct Team {
     pub link: String,
     pub abbreviation: String,
     pub team_name: String,
-    pub location_name: String,
+    pub location_name: Option<String>,
     pub first_year_of_play: Option<String>,
     pub short_name: String,
     pub active: bool,
