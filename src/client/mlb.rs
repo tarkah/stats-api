@@ -68,6 +68,22 @@ impl Client {
         bail!("Failed to get teams response.")
     }
 
+    /// Get all teams, regardless of sportId
+    ///
+    /// Usefull during Exhibition games since an MLB team can
+    /// face off against a college team
+    pub async fn get_all_teams(&self) -> Result<Vec<Team>, Error> {
+        let url = self.get_url("teams", None);
+        let response_type = ResponseType::TeamsResponse;
+
+        let _response = self.get(url, response_type).await?;
+
+        if let Response::TeamsResponse(response) = _response {
+            return Ok(response.teams);
+        }
+        bail!("Failed to get teams response.")
+    }
+
     pub async fn get_team(&self, team_id: u32) -> Result<Team, Error> {
         let url = self.get_url(&format!("teams/{}", team_id), None);
         let response_type = ResponseType::TeamsResponse;
