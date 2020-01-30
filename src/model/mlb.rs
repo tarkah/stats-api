@@ -94,7 +94,7 @@ pub struct ScheduleGameTeams {
 #[serde(rename_all = "camelCase")]
 #[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct ScheduleGameTeam {
-    pub score: u8,
+    pub score: Option<u8>,
     #[serde(rename(deserialize = "team"))]
     pub detail: ScheduleGameTeamDetail,
 }
