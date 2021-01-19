@@ -3,15 +3,17 @@ use crate::model::mlb::{
 };
 use failure::{bail, format_err, Error, ResultExt};
 use futures::AsyncReadExt;
-use http::{Request, Uri};
-use http_client::{native::NativeClient, Body, HttpClient};
+use isahc::{
+    http::{self, Uri},
+    AsyncBody, HttpClient, Request,
+};
 use std::collections::HashMap;
 
 #[cfg(test)]
 use mockito;
 
 pub struct Client {
-    client: NativeClient,
+    client: HttpClient,
     base: String,
     sport: Sport,
 }
@@ -35,12 +37,12 @@ impl Client {
         let request = Request::builder()
             .method("GET")
             .uri(url)
-            .body(Body::empty())
+            .body(AsyncBody::empty())
             .unwrap();
 
         let res = self
             .client
-            .send(request)
+            .send_async(request)
             .await
             .context("Failed to get request")?;
 
@@ -148,7 +150,10 @@ impl Client {
 impl Default for Client {
     /// Returns client for Sport::Mlb
     fn default() -> Self {
-        let client = NativeClient::new();
+        let client = HttpClient::builder()
+            .max_connections_per_host(6)
+            .build()
+            .unwrap();
         let sport = Sport::Mlb;
 
         #[cfg(not(test))]
