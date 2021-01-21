@@ -102,6 +102,25 @@ impl Client {
         bail!("Failed to get team response.")
     }
 
+    pub async fn get_todays_schedule(&self) -> Result<Schedule, Error> {
+        let mut modifiers = HashMap::new();
+        modifiers.insert("sportId", String::from(&self.sport));
+
+        let url = self.get_url("schedule", Some(modifiers));
+        let response_type = ResponseType::ScheduleResponse;
+
+        let _response = self.get(url, response_type).await?;
+
+        if let Response::ScheudleResponse(mut response) = _response {
+            let schedule = response
+                .dates
+                .pop()
+                .ok_or_else(|| format_err!("No games for today."))?;
+            return Ok(schedule);
+        }
+        bail!("Failed to get schedule response.")
+    }
+
     pub async fn get_schedule_for(&self, date: chrono::NaiveDate) -> Result<Schedule, Error> {
         let mut modifiers = HashMap::new();
         modifiers.insert("date", date.format("%Y-%m-%d").to_string());
