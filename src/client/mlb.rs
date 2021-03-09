@@ -9,9 +9,6 @@ use isahc::{
 };
 use std::collections::HashMap;
 
-#[cfg(test)]
-use mockito;
-
 pub struct Client {
     client: HttpClient,
     base: String,
