@@ -32,7 +32,7 @@ pub enum ResponseType {
 
 pub enum Response {
     TeamsResponse(TeamsResponse),
-    ScheudleResponse(ScheduleResponse),
+    ScheduleResponse(ScheduleResponse),
     GameContentResponse(GameContentResponse),
     GameLinescoreResponse(GameLinescoreResponse),
 }
@@ -45,7 +45,7 @@ impl ResponseType {
                 Err(e) => bail!(e),
             },
             ResponseType::ScheduleResponse => match serde_json::from_slice(body) {
-                Ok(deser) => Ok(Response::ScheudleResponse(deser)),
+                Ok(deser) => Ok(Response::ScheduleResponse(deser)),
                 Err(e) => bail!(e),
             },
             ResponseType::GameContentResponse => match serde_json::from_slice(body) {
