@@ -108,7 +108,7 @@ impl Client {
 
         let _response = self.get(url, response_type).await?;
 
-        if let Response::ScheudleResponse(mut response) = _response {
+        if let Response::ScheduleResponse(mut response) = _response {
             let schedule = response
                 .dates
                 .pop()
@@ -128,7 +128,7 @@ impl Client {
 
         let _response = self.get(url, response_type).await?;
 
-        if let Response::ScheudleResponse(mut response) = _response {
+        if let Response::ScheduleResponse(mut response) = _response {
             let schedule = response
                 .dates
                 .pop()
