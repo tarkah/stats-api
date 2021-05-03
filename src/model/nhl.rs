@@ -18,7 +18,7 @@ pub struct Team {
     pub team_name: String,
     pub location_name: String,
     pub first_year_of_play: Option<String>,
-    pub short_name: String,
+    pub short_name: Option<String>,
     pub official_site_url: Option<String>,
     pub franchise_id: u32,
     pub active: bool,
