@@ -15,7 +15,7 @@ fn test_teams() {
             .create();
 
         let resp = client.get_teams().await;
-        assert!(resp.is_ok(), format!("{}", resp.err().unwrap()));
+        assert!(resp.is_ok(), "{}", resp.err().unwrap());
     });
 }
 
@@ -32,7 +32,7 @@ fn test_team() {
             .create();
 
         let resp = client.get_team(team_id).await;
-        assert!(resp.is_ok(), format!("{}", resp.err().unwrap()));
+        assert!(resp.is_ok(), "{}", resp.err().unwrap());
     });
 }
 
@@ -49,7 +49,7 @@ fn test_schedule() {
             .create();
 
         let resp = client.get_schedule_for(date).await;
-        assert!(resp.is_ok(), format!("{}", resp.err().unwrap()));
+        assert!(resp.is_ok(), "{}", resp.err().unwrap());
     });
 }
 
@@ -83,7 +83,7 @@ fn test_game_content_pre() {
             .create();
 
         let resp = client.get_game_content(game_pk).await;
-        assert!(resp.is_ok(), format!("{}", resp.err().unwrap()));
+        assert!(resp.is_ok(), "{}", resp.err().unwrap());
     });
 }
 
@@ -100,7 +100,7 @@ fn test_game_content_post() {
             .create();
 
         let resp = client.get_game_content(game_pk).await;
-        assert!(resp.is_ok(), format!("{}", resp.err().unwrap()));
+        assert!(resp.is_ok(), "{}", resp.err().unwrap());
     });
 }
 
@@ -117,7 +117,7 @@ fn test_game_linescore_pre() {
             .create();
 
         let resp = client.get_game_linescore(game_pk).await;
-        assert!(resp.is_ok(), format!("{}", resp.err().unwrap()));
+        assert!(resp.is_ok(), "{}", resp.err().unwrap());
     });
 }
 
@@ -134,6 +134,6 @@ fn test_game_linescore_post() {
             .create();
 
         let resp = client.get_game_linescore(game_pk).await;
-        assert!(resp.is_ok(), format!("{}", resp.err().unwrap()));
+        assert!(resp.is_ok(), "{}", resp.err().unwrap());
     });
 }
