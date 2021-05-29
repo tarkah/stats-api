@@ -5,6 +5,7 @@ use serde::{Deserialize, Serialize};
 #[serde(rename_all = "camelCase")]
 #[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct TeamsResponse {
+    #[serde(default)]
     pub teams: Vec<Team>,
 }
 
@@ -12,15 +13,22 @@ pub struct TeamsResponse {
 #[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct Team {
     pub id: u32,
+    #[serde(default)]
     pub name: String,
+    #[serde(default)]
     pub link: String,
+    #[serde(default)]
     pub abbreviation: String,
+    #[serde(default)]
     pub team_name: String,
+    #[serde(default)]
     pub location_name: String,
     pub first_year_of_play: Option<String>,
     pub short_name: Option<String>,
     pub official_site_url: Option<String>,
+    #[serde(default)]
     pub franchise_id: u32,
+    #[serde(default)]
     pub active: bool,
 }
 
@@ -64,6 +72,7 @@ impl ResponseType {
 #[serde(rename_all = "camelCase")]
 #[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct ScheduleResponse {
+    #[serde(default)]
     pub dates: Vec<Schedule>,
 }
 
@@ -71,6 +80,7 @@ pub struct ScheduleResponse {
 #[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct Schedule {
     pub date: NaiveDate,
+    #[serde(default)]
     pub games: Vec<ScheduleGame>,
 }
 
@@ -78,10 +88,13 @@ pub struct Schedule {
 #[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct ScheduleGame {
     pub game_pk: u64,
+    #[serde(default)]
     pub link: String,
     #[serde(rename(deserialize = "gameDate"))]
     pub date: DateTime<Utc>,
+    #[serde(default)]
     pub game_type: String,
+    #[serde(default)]
     pub season: String,
     pub teams: ScheduleGameTeams,
 }
@@ -105,7 +118,9 @@ pub struct ScheduleGameTeam {
 #[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct ScheduleGameTeamDetail {
     pub id: u32,
+    #[serde(default)]
     pub name: String,
+    #[serde(default)]
     pub link: String,
 }
 
@@ -126,6 +141,7 @@ pub struct GameContentMedia {
 #[serde(rename_all = "camelCase")]
 #[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct GameContentEpg {
+    #[serde(default)]
     pub title: String,
     #[serde(deserialize_with = "fail_as_none")]
     pub items: Option<Vec<GameContentEpgItem>>,
@@ -134,9 +150,13 @@ pub struct GameContentEpg {
 #[serde(rename_all = "camelCase")]
 #[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct GameContentEpgItem {
+    #[serde(default)]
     pub media_feed_type: String,
+    #[serde(default)]
     pub call_letters: String,
+    #[serde(default)]
     pub media_state: String,
+    #[serde(default)]
     pub media_playback_id: String,
 }
 
@@ -149,6 +169,7 @@ pub struct GameContentEditorial {
 #[serde(rename_all = "camelCase")]
 #[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct GameContentEditorialItem {
+    #[serde(default)]
     pub title: String,
     pub items: Option<Vec<GameContentEditorialItemArticle>>,
 }
@@ -156,10 +177,15 @@ pub struct GameContentEditorialItem {
 #[serde(rename_all = "camelCase")]
 #[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct GameContentEditorialItemArticle {
+    #[serde(default)]
     pub r#type: String,
+    #[serde(default)]
     pub headline: String,
+    #[serde(default)]
     pub subhead: String,
+    #[serde(default)]
     pub seo_title: String,
+    #[serde(default)]
     pub seo_description: String,
     #[serde(deserialize_with = "fail_as_none")]
     pub media: Option<GameContentArticleMedia>,
@@ -168,6 +194,7 @@ pub struct GameContentEditorialItemArticle {
 #[serde(rename_all = "camelCase")]
 #[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct GameContentArticleMedia {
+    #[serde(default)]
     pub r#type: String,
     pub image: GameContentArticleMediaImage,
 }
@@ -216,9 +243,13 @@ pub struct GameContentArticleMediaImageCut {
 #[serde(rename_all = "camelCase")]
 #[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct GameContentArticleMediaImageCutDetail {
+    #[serde(default)]
     pub aspect_ratio: String,
+    #[serde(default)]
     pub width: u32,
+    #[serde(default)]
     pub height: u32,
+    #[serde(default)]
     pub src: String,
 }
 
@@ -232,12 +263,19 @@ pub struct GameContentMilestones {
 #[serde(rename_all = "camelCase")]
 #[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct GameContentMilestoneItem {
+    #[serde(default)]
     pub description: String,
+    #[serde(default)]
     pub r#type: String,
+    #[serde(default)]
     pub period: String,
+    #[serde(default)]
     pub period_time: String,
+    #[serde(default)]
     pub ordinal_num: String,
+    #[serde(default)]
     pub team_id: String,
+    #[serde(default)]
     pub stats_event_id: String,
     #[serde(deserialize_with = "fail_as_none")]
     pub highlight: Option<GameContentMilestoneItemHighlight>,
@@ -246,8 +284,11 @@ pub struct GameContentMilestoneItem {
 #[serde(rename_all = "camelCase")]
 #[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct GameContentMilestoneItemHighlight {
+    #[serde(default)]
     pub title: String,
+    #[serde(default)]
     pub blurb: String,
+    #[serde(default)]
     pub description: String,
     pub playbacks: Option<Vec<GameContentMilestoneItemHighlightPlayback>>,
 }
@@ -255,13 +296,16 @@ pub struct GameContentMilestoneItemHighlight {
 #[serde(rename_all = "camelCase")]
 #[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct GameContentMilestoneItemHighlightPlayback {
+    #[serde(default)]
     pub name: String,
+    #[serde(default)]
     pub url: String,
 }
 
 #[serde(rename_all = "camelCase")]
 #[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct GameLinescoreResponse {
+    #[serde(default)]
     pub current_period: u8,
     pub teams: GameLinescoreTeams,
 }
@@ -278,14 +322,18 @@ pub struct GameLinescoreTeams {
 pub struct GameLinescoreTeam {
     #[serde(rename(deserialize = "team"))]
     pub detail: GameLinescoreTeamDetail,
+    #[serde(default)]
     pub goals: u8,
 }
 
 #[serde(rename_all = "camelCase")]
 #[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct GameLinescoreTeamDetail {
+    #[serde(default)]
     pub id: u32,
+    #[serde(default)]
     pub name: String,
+    #[serde(default)]
     pub link: String,
 }
 
