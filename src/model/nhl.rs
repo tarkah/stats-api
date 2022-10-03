@@ -91,7 +91,8 @@ pub struct ScheduleGameTeamDetail {
 pub struct GameContentResponse {
     #[serde(default)]
     pub editorial: GameContentEditorial,
-    pub media: GameContentMedia,
+    #[serde(default)]
+    pub media: Option<GameContentMedia>,
 }
 
 #[derive(Debug, Deserialize, Serialize, Clone)]
@@ -151,7 +152,7 @@ pub struct GameContentEditorialItemArticle {
     pub seo_title: String,
     #[serde(default)]
     pub seo_description: String,
-    #[serde(deserialize_with = "fail_as_none")]
+    #[serde(default, deserialize_with = "fail_as_none")]
     pub media: Option<GameContentArticleMedia>,
 }
 

@@ -83,8 +83,10 @@ pub struct ScheduleGameTeamDetail {
 #[derive(Debug, Deserialize, Serialize, Clone)]
 #[serde(rename_all = "camelCase")]
 pub struct GameContentResponse {
+    #[serde(default)]
     pub editorial: GameContentEditorial,
-    pub media: GameContentMedia,
+    #[serde(default)]
+    pub media: Option<GameContentMedia>,
 }
 
 #[derive(Debug, Deserialize, Serialize, Clone)]
@@ -112,7 +114,7 @@ pub struct GameContentEpgItem {
     pub id: u32,
 }
 
-#[derive(Debug, Deserialize, Serialize, Clone)]
+#[derive(Debug, Deserialize, Serialize, Clone, Default)]
 #[serde(rename_all = "camelCase")]
 pub struct GameContentEditorial {
     #[serde(default, deserialize_with = "fail_as_none")]
