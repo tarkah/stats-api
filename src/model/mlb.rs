@@ -115,7 +115,7 @@ pub struct GameContentEpgItem {
 #[derive(Debug, Deserialize, Serialize, Clone)]
 #[serde(rename_all = "camelCase")]
 pub struct GameContentEditorial {
-    #[serde(deserialize_with = "fail_as_none")]
+    #[serde(default, deserialize_with = "fail_as_none")]
     pub preview: Option<GameContentEditorialItem>,
 }
 
